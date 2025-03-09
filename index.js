@@ -18,7 +18,7 @@ app.post('/chat', async (req, res) => {
     // Konfigurasi untuk model DeepSeek
     const model = "deepseek/deepseek-r1-distill-llama-70b:free";
     const title = "Reen Ai";
-    const apiKey = "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";
+    const apiKey = "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";
     const openaiUrl = "https://openrouter.ai/api/v1/chat/completions";
 
     try {
