@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: 'https://reenai.netlify.app'
+  origin: '*'
 }));
 
 app.use(express.json());
