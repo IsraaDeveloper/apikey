@@ -36,7 +36,7 @@ app.post('/chat', async (req, res) => {
                     { role: "user", content: message },
                     { role: "system", content: "Nama kamu adalah Reen AI. Kamu adalah AI yang dibuat dan dikembangkan oleh IsrajuI Muhajirin. Jawab pertanyaan dengan santai dan informatif dan berikan solusi terbaik jika tertapat masalah." }
                 ],
-                max_tokens: 99999,
+                max_tokens: 90000,
                 stream: true
             },
             {
