@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: '*'
+  origin: 'https://reenai.netlify.app/'
 }));
 
 app.use(express.json());
@@ -46,7 +46,8 @@ app.post('/chat', async (req, res) => {
                     "HTTP-Referer": "https://israjulmuhajirin.my.id",
                     "X-Title": title
                 },
-                responseType: "stream"
+                responseType: "stream",
+                timeout: 10000
             }
         );
 
